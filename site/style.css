@@ -171,7 +171,7 @@ h3.heading {
   z-index: -1;
 }
 .dark {
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0,102,153,0.75);
   color: white;
   padding: 7rem 2rem;
 }
@@ -188,7 +188,7 @@ h3.heading {
 }
 /* -- CONTACT SECTION -- */
 footer {
-  background-color: #006699;
+  background-color: #000000;
   color: white;
   padding: 2rem 0 2rem;
   margin-top: 1rem;
