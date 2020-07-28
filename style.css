@@ -216,6 +216,15 @@ hr.socket {
   border-top: .2rem solid #33ccff;
 }
 
+/* -- PROJECT INDIVIDUAL PAGES -- */
+
+#design img {
+  width: 100%;
+  border: 2px solid black;
+  margin-bottom: 4rem;
+}
+
+
 
 /*============ BOOTSTRAP BREAK POINTS:
 
