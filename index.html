@@ -31,7 +31,7 @@
 					<a class="nav-link" href="#projects">PROJECTS</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#otherwork">OTHER WORK</a>
+					<a class="nav-link" href="#graphics">GRAPHIC DESIGN</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#contact">CONTACT ME</a>
@@ -185,13 +185,13 @@
 <!-- End Projects Section -->
 
 <!-- Start Other Work Section -->
-<div id="otherwork" class="offset">
+<div id="graphics" class="offset">
 	<div class="fixed-background">
 		<div class="row dark text-center otherwork">
 			<div class="col-12">
-				<h3>OTHER WORK</h3>
+				<h3>GRAPHIC DESIGN</h3>
 				<div class="heading-underline"></div>
-				<h4 class="heading">LOGO DESIGN</h4>
+				<h4 class="heading">LOGO DESIGNS</h4>
 			</div>
 			<div class="col-md-4">
 				<div class="feature">
@@ -214,8 +214,79 @@
 					<p>Laois, IRELAND</p>
 				</div>
 			</div>
+			<div class="col-md-4">
+				<div class="feature">
+					<img src="img/logos/CeramicsLogo.jpg">
+					<h3>KK Ceramics</h3>
+					<p>Project for Adobe Illustrator E-College course</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="feature">
+					<img src="img/logos/NatureReserveLogo.jpg">
+					<h3>Greenfield Nature Reserve</h3>
+					<p>Project for Adobe Illustrator E-College course</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="feature">
+					<img src="img/logos/bgafcNewCrest.png">
+					<h3>Ballingarry AFC Soccer Club</h3>
+					<p>Potential new crest design</p>
+				</div>
+			</div>
+			<div class="col-12">
+				<h3>GRAPHIC DESIGN</h3>
+				<div class="heading-underline"></div>
+				<h4 class="heading">BROCHURE DESIGNS</h4>
+				<p>(Click on images to view larger versions)</p>
+			</div>
+			<div class="col-md-4">
+				<div class="feature">
+					<img id="bg" src="img/brochures/BGAFC_brochure_full.jpg">
+					<h3>Ballingarry AFC</h3>
+					<p>Trifold brochure designed in Microsoft Publisher, promiting
+						club membership scheme.
+					</p>
+					<!-- The Modal -->
+					<div id="myModal1" class="modal">
+						<span class="close">Close &times;</span>
+						<img class="modal-content" id="img01">
+						<div id="caption"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md-4">
+				<div class="feature">
+					<img id="tom" src="img/brochures/TomFoxFlyer.jpg">
+					<h3>Tom Fox Artist</h3>
+					<p>Trifold Brochure designed in Adobe Photoshop, commemorating late artist Tom Fox</p>
+					<!-- The Modal -->
+					<div id="myModal2" class="modal">
+						<span class="close">Close &times;</span>
+						<img class="modal-content" id="img02">
+						<div id="caption"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col-md-4">
+				<div class="feature">
+					<img id="gst" src="img/brochures/GST.jpg">
+					<h3>Greenway Brochure</h3>
+					<p>Brochure designed in Adobe InDesign CC as part of E-College Course</p>
+					<!-- The Modal -->
+					<div id="myModal3" class="modal">
+						<span class="close">Close &times;</span>
+						<img class="modal-content" id="img03">
+						<div id="caption"></div>
+					</div>
+				</div>
+			</div>
 
 		</div>
+		
 		<div class="fixed-wrap">
 			<div class="fixed"></div>
 		</div>
@@ -247,7 +318,70 @@
 </div>
 <!-- End Contact Section -->
 
+<script>
+	// Get the modal - Image 1
+	var modal = document.getElementById("myModal1");
+	
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("bg");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
 
+	// Get the modal - Image 2
+	var modal2 = document.getElementById("myModal2");
+	
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img2 = document.getElementById("tom");
+	var modalImg2 = document.getElementById("img02");
+	var captionText = document.getElementById("caption");
+	img2.onclick = function(){
+	  modal2.style.display = "block";
+	  modalImg2.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+	
+	// Get the <span> element that closes the modal
+	var span2 = document.getElementsByClassName("close")[1];
+	
+	// When the user clicks on <span> (x), close the modal
+	span2.onclick = function() { 
+	  modal2.style.display = "none";
+	}
+
+	// Get the modal - Image 3
+	var modal3 = document.getElementById("myModal3");
+	
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img3 = document.getElementById("gst");
+	var modalImg3 = document.getElementById("img03");
+	var captionText = document.getElementById("caption");
+	img3.onclick = function(){
+	  modal3.style.display = "block";
+	  modalImg3.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+	
+	// Get the <span> element that closes the modal
+	var span3 = document.getElementsByClassName("close")[2];
+	
+	// When the user clicks on <span> (x), close the modal
+	span3.onclick = function() { 
+	  modal3.style.display = "none";
+	}
+	</script>
 
 <!--- Script Source Files -->
 <script src="js/jquery-3.3.1.min.js"></script>
