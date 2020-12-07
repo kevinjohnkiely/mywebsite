@@ -94,7 +94,9 @@ body {
   background-color: whitesmoke;
 }
 
-
+.aboutMe p {
+  text-align: left;
+}
 
 /*============= COURSE SECTION =============*/
 
